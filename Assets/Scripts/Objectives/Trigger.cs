@@ -16,15 +16,17 @@ public class Trigger : MonoBehaviour
     private GateController gate;
 
 
+    [SerializeField]
     public Player player;
 
         void Start()
         {
-        player = GameObject.FindGameObjectWithTag("Character").GetComponent<Player>();
         }
 
         void OnTriggerEnter(Collider other)
         {
+            player = GameObject.FindGameObjectWithTag("Character").GetComponent<Player>();
+
             if(other.CompareTag("Character"))
             {
             isOnTrigger = true;
