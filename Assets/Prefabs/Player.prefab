@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 8932384023579105232}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player_2D
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d4b25ed59774c2dab59a88f8ad8428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxJumpHeight: 5.5
+  maxJumpHeight: 3.5
   timeToJumpApex: 0.3
   accelerationTimeAirborne: 0.2
   accelerationTimeGrounded: 0.05

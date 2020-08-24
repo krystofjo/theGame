@@ -42,7 +42,10 @@ public class DeadOnePlayerInput : MonoBehaviour
     {
         if (gameState.paused)
             return;
+            
+
 
         player.OnSwitchDown();
+
     }
 }

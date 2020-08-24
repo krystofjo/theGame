@@ -35,6 +35,9 @@ public class Player : MonoBehaviour
 
     LevelGameState gameState;
 
+    public Trigger trigger;
+
+
 
     void Start()
     {
@@ -74,6 +77,7 @@ public class Player : MonoBehaviour
         ConfirmMove(nextStep);
 
         wantsToJump = false;
+        
     }
 
     void ConfirmMove(float step)
@@ -101,9 +105,14 @@ public class Player : MonoBehaviour
     }
 
     public void OnSwitchDown()
-    {
+    {   
         if (gameState == null || gameState.paused)
             return;
+        
+        if(trigger != null)
+        {
+            trigger.isSwitchedOn = !trigger.isSwitchedOn;
+        } 
 
         var currentPos = pathfinding.GetPosition();
 
@@ -113,4 +122,7 @@ public class Player : MonoBehaviour
 
         controller.Move(nextPos - currentPos + pathfinding.parentDelta, Vector3.zero);
     }
+    
+
+
 }
