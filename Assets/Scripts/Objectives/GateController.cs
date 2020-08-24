@@ -7,7 +7,7 @@ using UnityEngine;
 public class GateController : MonoBehaviour
 {
     public bool isSwitchedOn;
-    private Animator anim;
+    public Animator anim;
 
     void Start()
    {
@@ -15,14 +15,13 @@ public class GateController : MonoBehaviour
     }
     public void UpdateStatus()
     {  
-        Debug.Log("Door Status Updated");
         if(isSwitchedOn)
         {
-        anim.Play("CubeOpen");
+            anim.Play("Open");
         }
         if(!isSwitchedOn)
         {
-        anim.Play("CubeClosed");
+            anim.Play("Close");
         }
     }
 

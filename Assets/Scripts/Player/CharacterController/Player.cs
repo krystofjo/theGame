@@ -112,6 +112,7 @@ public class Player : MonoBehaviour
         if(trigger != null)
         {
             trigger.isSwitchedOn = !trigger.isSwitchedOn;
+            trigger.Action();
         } 
 
         var currentPos = pathfinding.GetPosition();

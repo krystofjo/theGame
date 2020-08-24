@@ -44,16 +44,9 @@ public class Trigger : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.LeftShift) && isOnTrigger)
-        {
-            Debug.Log("KeyPressed");
-            isSwitchedOn = !isSwitchedOn;
-            Action();
-        }
-
     } 
 
-    void Action()
+    public void Action()
     {
         if(isSwitchedOn)
         {
