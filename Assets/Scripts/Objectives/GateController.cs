@@ -12,17 +12,23 @@ public class GateController : MonoBehaviour
     void Start()
    {
         anim = GetComponentInChildren<Animator>();
+        if(isSwitchedOn)
+        {   
+            anim.SetBool("GateOn", true);
+        }
+        if(!isSwitchedOn)
+        {
+            anim.SetBool("GateOn", false);
+        }
     }
     public void UpdateStatus()
     {  
         if(isSwitchedOn)
         {   
-            Debug.Log("SwitchedOn");
             anim.SetBool("GateOn", true);
         }
         if(!isSwitchedOn)
         {
-            Debug.Log("SwitchedOff");
             anim.SetBool("GateOn", false);
         }
     }

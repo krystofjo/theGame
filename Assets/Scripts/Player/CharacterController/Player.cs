@@ -35,7 +35,8 @@ public class Player : MonoBehaviour
 
     LevelGameState gameState;
 
-    public Trigger trigger;
+    public GateTrigger gateTrigger;
+    public SegmentTrigger segmentTrigger;
 
 
 
@@ -109,11 +110,17 @@ public class Player : MonoBehaviour
         if (gameState == null || gameState.paused)
             return;
         
-        if(trigger != null)
+        if(gateTrigger != null)
         {
-            trigger.isSwitchedOn = !trigger.isSwitchedOn;
-            trigger.Action();
+           gateTrigger.isSwitchedOn = !gateTrigger.isSwitchedOn;
+            gateTrigger.Action();
         } 
+
+        if(segmentTrigger != null)
+        {
+           segmentTrigger.isSwitchedOn = !segmentTrigger.isSwitchedOn;
+            segmentTrigger.Action();
+        }
 
         var currentPos = pathfinding.GetPosition();
 

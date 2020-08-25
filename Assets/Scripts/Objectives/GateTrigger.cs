@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-public class Trigger : MonoBehaviour
+public class GateTrigger : MonoBehaviour
 {
 
 
@@ -13,7 +13,8 @@ public class Trigger : MonoBehaviour
     [SerializeField]
     public bool isSwitchedOn;
     [SerializeField]
-    private GateController gate;
+    private GateController[] gate;
+
 
 
     [SerializeField]
@@ -33,7 +34,7 @@ public class Trigger : MonoBehaviour
             if(other.CompareTag("Character"))
             {
             isOnTrigger = true;
-            player.trigger = this;
+            player.gateTrigger = this;
             }
         }
 
@@ -42,7 +43,7 @@ public class Trigger : MonoBehaviour
             if(other.CompareTag("Character"))
             {
             isOnTrigger = false;
-            player.trigger = null;
+            player.gateTrigger = null;
             }
         }
 
@@ -51,20 +52,30 @@ public class Trigger : MonoBehaviour
 
     } 
 
+    //initialized by Player.cs
     public void Action()
     {
         if(isSwitchedOn)
         {
             anim.SetBool("TriggerSwitcherOn", true);
-            gate.isSwitchedOn = true;
-            gate.UpdateStatus();
+            
+            for(int i = 0; i < gate.Length; i++)
+            {
+            gate[i].isSwitchedOn = !gate[i].isSwitchedOn;
+            gate[i].UpdateStatus();
+            }
+
         }
         
         else
         {
             anim.SetBool("TriggerSwitcherOn", false);
-            gate.isSwitchedOn = false;
-            gate.UpdateStatus();
+            
+            for(int i = 0; i < gate.Length; i++)
+            {
+            gate[i].isSwitchedOn = !gate[i].isSwitchedOn;
+            gate[i].UpdateStatus();
+            }
         }
     }
 
