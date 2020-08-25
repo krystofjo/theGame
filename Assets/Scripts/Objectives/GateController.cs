@@ -16,12 +16,14 @@ public class GateController : MonoBehaviour
     public void UpdateStatus()
     {  
         if(isSwitchedOn)
-        {
-            anim.Play("Open");
+        {   
+            Debug.Log("SwitchedOn");
+            anim.SetBool("GateOn", true);
         }
         if(!isSwitchedOn)
         {
-            anim.Play("Close");
+            Debug.Log("SwitchedOff");
+            anim.SetBool("GateOn", false);
         }
     }
 

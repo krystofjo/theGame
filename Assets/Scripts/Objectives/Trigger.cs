@@ -18,9 +18,12 @@ public class Trigger : MonoBehaviour
 
     [SerializeField]
     public Player player;
+    
+    Animator anim;
 
         void Start()
         {
+            anim = GetComponentInChildren<Animator>();
         }
 
         void OnTriggerEnter(Collider other)
@@ -52,14 +55,16 @@ public class Trigger : MonoBehaviour
     {
         if(isSwitchedOn)
         {
-        gate.isSwitchedOn = true;
-        gate.UpdateStatus();
+            anim.SetBool("TriggerSwitcherOn", true);
+            gate.isSwitchedOn = true;
+            gate.UpdateStatus();
         }
         
         else
         {
-        gate.isSwitchedOn = false;
-        gate.UpdateStatus();
+            anim.SetBool("TriggerSwitcherOn", false);
+            gate.isSwitchedOn = false;
+            gate.UpdateStatus();
         }
     }
 
