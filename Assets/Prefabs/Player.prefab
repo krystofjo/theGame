@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 8932384023579105232}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Character
+  m_TagString: Player_2D
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -444,6 +444,8 @@ MonoBehaviour:
   accelerationTimeGrounded: 0.05
   moveSpeed: 12
   pathfinding: {fileID: 7447710313142363388}
+  gateTrigger: {fileID: 0}
+  segmentTrigger: {fileID: 0}
 --- !u!114 &7447710313142363379
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -29,9 +29,9 @@ public class GateTrigger : MonoBehaviour
 
         void OnTriggerEnter(Collider other)
         {
-            player = GameObject.FindGameObjectWithTag("Character").GetComponent<Player>();
+            player = GameObject.FindGameObjectWithTag("Player_2D").GetComponent<Player>();
 
-            if(other.CompareTag("Character"))
+            if(other.CompareTag("Player_2D"))
             {
             isOnTrigger = true;
             player.gateTrigger = this;
@@ -40,17 +40,13 @@ public class GateTrigger : MonoBehaviour
 
         void OnTriggerExit(Collider other)
         {
-            if(other.CompareTag("Character"))
+            if(other.CompareTag("Player_2D"))
             {
             isOnTrigger = false;
             player.gateTrigger = null;
             }
         }
 
-    void Update()
-    {
-
-    } 
 
     //initialized by Player.cs
     public void Action()

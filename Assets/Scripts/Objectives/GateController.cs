@@ -7,20 +7,17 @@ using UnityEngine;
 public class GateController : MonoBehaviour
 {
     public bool isSwitchedOn;
-    public Animator anim;
+    Animator anim;
 
     void Start()
    {
         anim = GetComponentInChildren<Animator>();
         if(isSwitchedOn)
-        {   
-            anim.SetBool("GateOn", true);
-        }
-        if(!isSwitchedOn)
         {
-            anim.SetBool("GateOn", false);
+        UpdateStatus();
         }
     }
+    
     public void UpdateStatus()
     {  
         if(isSwitchedOn)

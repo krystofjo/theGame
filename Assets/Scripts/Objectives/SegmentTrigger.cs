@@ -16,7 +16,6 @@ public class SegmentTrigger : MonoBehaviour
     private SegmentController[] segment;
 
 
-
     [SerializeField]
     public Player player;
     
@@ -29,9 +28,9 @@ public class SegmentTrigger : MonoBehaviour
 
         void OnTriggerEnter(Collider other)
         {
-            player = GameObject.FindGameObjectWithTag("Character").GetComponent<Player>();
+            player = GameObject.FindGameObjectWithTag("Player_2D").GetComponent<Player>();
 
-            if(other.CompareTag("Character"))
+            if(other.CompareTag("Player_2D"))
             {
             isOnTrigger = true;
             player.segmentTrigger = this;
@@ -40,7 +39,7 @@ public class SegmentTrigger : MonoBehaviour
 
         void OnTriggerExit(Collider other)
         {
-            if(other.CompareTag("Character"))
+            if(other.CompareTag("Player_2D"))
             {
             isOnTrigger = false;
             player.segmentTrigger = null;
