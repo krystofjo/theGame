@@ -60,7 +60,7 @@ public class SegmentTrigger : MonoBehaviour
 
             for(int i = 0; i < segment.Length; i++)
             {
-                segment[i].isSwitchedOn = true;
+                segment[i].isSwitchedOn = !segment[i].isSwitchedOn;
                 segment[i].UpdateStatus();
             }
         }
@@ -71,7 +71,7 @@ public class SegmentTrigger : MonoBehaviour
             
             for(int i = 0; i < segment.Length; i++)
             {
-            segment[i].isSwitchedOn = false;
+            segment[i].isSwitchedOn = !segment[i].isSwitchedOn;;
             segment[i].UpdateStatus();
             }
         }
