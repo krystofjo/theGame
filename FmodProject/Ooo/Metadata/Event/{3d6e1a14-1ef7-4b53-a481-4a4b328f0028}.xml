@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{3d6e1a14-1ef7-4b53-a481-4a4b328f0028}">
 		<property name="name">
 			<value>AmbienceColored</value>

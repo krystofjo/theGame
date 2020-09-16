@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{d93f7f88-a099-4514-9e6f-0a6becb9f12a}">
 		<property name="name">
 			<value>AmbienceRainbow</value>

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
-  HasSourceProject: 0
+  HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
+  sourceProjectPath: FmodProject/Ooo/Ooo.fspro
   sourceBankPath: FmodProject\Ooo\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
