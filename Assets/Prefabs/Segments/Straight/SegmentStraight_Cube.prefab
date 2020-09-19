@@ -418,7 +418,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 3d4e83a228c2a9d4eb65f75722100fc6,
         type: 3}
       propertyPath: m_Name
-      value: straight__ barvy
+      value: straight_cube
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d4e83a228c2a9d4eb65f75722100fc6, type: 3}

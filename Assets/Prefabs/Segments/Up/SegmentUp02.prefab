@@ -419,7 +419,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: ba775487c9dca4b4ca95c18e8bfc8ba7,
         type: 3}
       propertyPath: m_Name
-      value: up_02_barvy
+      value: up_02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba775487c9dca4b4ca95c18e8bfc8ba7, type: 3}

@@ -419,7 +419,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: dc4adc4fd1edcc84f9505a93290e75e6,
         type: 3}
       propertyPath: m_Name
-      value: DownAlt_01_barvy
+      value: DownAlt_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc4adc4fd1edcc84f9505a93290e75e6, type: 3}

@@ -419,7 +419,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 4255bf49abddda94696eb8aacdbcf83e,
         type: 3}
       propertyPath: m_Name
-      value: turn_03_barvy
+      value: turn_03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4255bf49abddda94696eb8aacdbcf83e, type: 3}
