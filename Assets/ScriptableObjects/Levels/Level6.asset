@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999a825b8099d604baf90a21e246f75a, type: 3}
   m_Name: Level6
   m_EditorClassIdentifier: 
-  levelIdentifier: level03
-  scenePath: Level05
-  nextLevel: {fileID: 0}
-  levelAmbience: event:/Sounds/Ambience/AmbienceColored
-  timeLimit: 120
+  levelIdentifier: level06
+  scenePath: Level6
+  nextLevel: {fileID: 11400000, guid: 8be2af760eb804345bd280c0495198ed, type: 2}
+  levelAmbience: 
+  timeLimit: 180

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tutorial1
   m_EditorClassIdentifier: 
   levelIdentifier: tutorial01
-  scenePath: 
-  nextLevel: {fileID: 11400000, guid: 985742a8fd84b864cbd7f0065acd5df0, type: 2}
-  levelAmbience: event:/Sounds/Ambience/AmbienceBlue
-  timeLimit: 60
+  scenePath: Tutorial1
+  nextLevel: {fileID: 11400000, guid: 36f44f2c1eee1e944a5e8ee2ea51cbf3, type: 2}
+  levelAmbience: 
+  timeLimit: 600
