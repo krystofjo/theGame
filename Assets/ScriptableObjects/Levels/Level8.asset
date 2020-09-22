@@ -16,4 +16,4 @@ MonoBehaviour:
   scenePath: Level8
   nextLevel: {fileID: 11400000, guid: e980840ed54b5c64b8a88716282318d2, type: 2}
   levelAmbience: 
-  timeLimit: 600
+  timeLimit: 60

@@ -16,4 +16,4 @@ MonoBehaviour:
   scenePath: Level10
   nextLevel: {fileID: 0}
   levelAmbience: 
-  timeLimit: 600
+  timeLimit: 120
