@@ -22,6 +22,7 @@ public class GateTrigger : MonoBehaviour
     
     Animator anim;
 
+
         void Start()
         {
             anim = GetComponentInChildren<Animator>();

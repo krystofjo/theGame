@@ -34,6 +34,7 @@ public class SegmentTrigger : MonoBehaviour
             {
             isOnTrigger = true;
             player.segmentTrigger = this;
+
             }
         }
 
