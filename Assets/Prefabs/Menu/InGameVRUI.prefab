@@ -65,8 +65,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 16
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b58ce2ba0e007674d964a25975bf7d2e, type: 2}
-  m_sharedMaterial: {fileID: -6070516906419345752, guid: b58ce2ba0e007674d964a25975bf7d2e,
+  m_fontAsset: {fileID: 11400000, guid: 894e59376cfd247439a7b52cc2a4ad08, type: 2}
+  m_sharedMaterial: {fileID: 3782974823840075171, guid: 894e59376cfd247439a7b52cc2a4ad08,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -221,8 +221,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: /
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b58ce2ba0e007674d964a25975bf7d2e, type: 2}
-  m_sharedMaterial: {fileID: -6070516906419345752, guid: b58ce2ba0e007674d964a25975bf7d2e,
+  m_fontAsset: {fileID: 11400000, guid: f41cf39e2c5d05e44b7f16b40f077e41, type: 2}
+  m_sharedMaterial: {fileID: 7879108612215147509, guid: f41cf39e2c5d05e44b7f16b40f077e41,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -404,6 +404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectedKeys: {fileID: 6811299474608095555}
   requiredKeys: {fileID: 2645167338512031608}
+  gameState: {fileID: 0}
 --- !u!1 &4903163061877520035
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,8 +534,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 16
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b58ce2ba0e007674d964a25975bf7d2e, type: 2}
-  m_sharedMaterial: {fileID: -6070516906419345752, guid: b58ce2ba0e007674d964a25975bf7d2e,
+  m_fontAsset: {fileID: 11400000, guid: 7d2fab7e77f80034db44abf9ec6f9e9c, type: 2}
+  m_sharedMaterial: {fileID: 9096145109739399347, guid: 7d2fab7e77f80034db44abf9ec6f9e9c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -689,7 +690,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:30:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b58ce2ba0e007674d964a25975bf7d2e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f41cf39e2c5d05e44b7f16b40f077e41, type: 2}
   m_sharedMaterial: {fileID: -6070516906419345752, guid: b58ce2ba0e007674d964a25975bf7d2e,
     type: 2}
   m_fontSharedMaterials: []
@@ -768,7 +769,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}

@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -268,6 +268,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55413ec7ee17d4d95a3a867b6200d092, type: 3}
+--- !u!114 &583409465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -2038761986294260073, guid: b8be49b2ec16b47cd94eb41859d8e8e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 587688120}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1404de1ff5504e50b94e735fb990968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &587688120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -278,17 +290,17 @@ PrefabInstance:
     - target: {fileID: 3774908628183240625, guid: b8be49b2ec16b47cd94eb41859d8e8e9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3774908628183240625, guid: b8be49b2ec16b47cd94eb41859d8e8e9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3774908628183240625, guid: b8be49b2ec16b47cd94eb41859d8e8e9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3774908628183240625, guid: b8be49b2ec16b47cd94eb41859d8e8e9,
         type: 3}
@@ -335,6 +347,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PathPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 6940697203956937954, guid: b8be49b2ec16b47cd94eb41859d8e8e9,
+        type: 3}
+      propertyPath: grabbable
+      value: 
+      objectReference: {fileID: 583409465}
     - target: {fileID: 8241403953606957067, guid: b8be49b2ec16b47cd94eb41859d8e8e9,
         type: 3}
       propertyPath: m_SceneId
@@ -484,6 +501,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: VRCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 1850263211145966501, guid: 5129efb8d9d02486c9253a9cac7c8531,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1850263211145966501, guid: 5129efb8d9d02486c9253a9cac7c8531,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2403854103089383800, guid: 5129efb8d9d02486c9253a9cac7c8531,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -509,6 +537,17 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5250402103612005936, guid: 5129efb8d9d02486c9253a9cac7c8531,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 5250402103612005936, guid: 5129efb8d9d02486c9253a9cac7c8531,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6785605104687632688, guid: 5129efb8d9d02486c9253a9cac7c8531,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -534,6 +573,28 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7178291349899160990, guid: 5129efb8d9d02486c9253a9cac7c8531,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 7178291349899160990, guid: 5129efb8d9d02486c9253a9cac7c8531,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 7411634075204597915, guid: 5129efb8d9d02486c9253a9cac7c8531,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 7411634075204597915, guid: 5129efb8d9d02486c9253a9cac7c8531,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7888075383033201379, guid: 5129efb8d9d02486c9253a9cac7c8531,
         type: 3}
       propertyPath: m_AnchorMin.y

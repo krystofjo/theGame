@@ -15,5 +15,5 @@ MonoBehaviour:
   levelIdentifier: level04
   scenePath: Level4
   nextLevel: {fileID: 11400000, guid: 403140b7b47f9534a9ef39c45b21d5f1, type: 2}
-  levelAmbience: 
+  levelAmbience: event:/Sounds/Ambience/AmbienceBlue
   timeLimit: 90
