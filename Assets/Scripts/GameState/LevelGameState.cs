@@ -31,6 +31,9 @@ public class LevelGameState : BaseNetworkBehaviour
     double pausedTime;
     double pausedAmount;
 
+    [Header("Score")]
+    public double score = 0;
+
     public void Initialize()
     {
         SetupEventListeners();
@@ -170,6 +173,17 @@ public class LevelGameState : BaseNetworkBehaviour
                 EventHub.Instance.FireEvent(
                     new GameOverEvent() { gameOverReasong = GameOverEvent.GameOverReason.TIME_UP }
                 );
+            }
+
+
+            if (ElapsedTime < levelData.rank3Stars) {
+                score = 3;
+            } else if (ElapsedTime < levelData.rank2Stars) {
+                score = 2;
+            } else if (ElapsedTime < levelData.rank1Stars) {
+                score = 1;
+            } else {
+                score = 0;
             }
         }
     }

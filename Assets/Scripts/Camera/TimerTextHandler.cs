@@ -14,6 +14,10 @@ namespace OOO.Camera
 
         [SerializeField]
         TextMeshProUGUI countdownTimerText;
+
+        [SerializeField]
+        TextMeshProUGUI scoreText;
+
         [SerializeField]
         LevelGameState gameState;
 
@@ -56,6 +60,9 @@ namespace OOO.Camera
                     new GameOverEvent() { gameOverReasong = GameOverEvent.GameOverReason.TIME_UP }
                 );
             }
+
+
+            scoreText.text = gameState.score.ToString();
         }
     }
 }
