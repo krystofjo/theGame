@@ -17,6 +17,6 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: af84d5adc548a294cb9b1e333fcd2e33, type: 2}
   levelAmbience: event:/Sounds/Ambience/AmbienceBlue
   timeLimit: 90
-  rank3Stars: 5
+  rank3Stars: 10
   rank2Stars: 40
   rank1Stars: 60
