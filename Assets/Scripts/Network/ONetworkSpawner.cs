@@ -53,25 +53,31 @@ namespace OOO.Network
             DestroySpawner();    
         }
 
+
         void StartUI()
         {
             mobileCamera.GetComponentInChildren<InGameUIController>().OnGameStart();
         }
 
+
         void StartTimer()
         {
-            mobileCamera.GetComponentInChildren<TimerTextHandler>().OnGameStart();
-            vrCamera.GetComponentInChildren<TimerTextHandler>().OnGameStart();
+            mobileCamera.GetComponentInChildren<UIHandler>().OnGameStart();
+
+            vrCamera.GetComponentInChildren<TimerTextHandler>().OnGameStart(); // TODO: Předělat na UIHandler
         }
+
 
         void StartMusic()
         {
             mobileCamera.GetComponentInChildren<AmbienceSoundController>().OnGameStart();
         }
 
+
         void SpawnMobilePlayer() {
             Instantiate(playerPrefab);
         }
+
 
         void SpawnCamera()
         {

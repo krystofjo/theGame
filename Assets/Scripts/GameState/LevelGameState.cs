@@ -32,7 +32,7 @@ public class LevelGameState : BaseNetworkBehaviour
     double pausedAmount;
 
     [Header("Score")]
-    public double score = 0;
+    public float score = 0;
 
     public void Initialize()
     {
