@@ -8,7 +8,7 @@ using OOO.Utils;
 namespace OOO.Camera
 {
     /** Attached to the Camera obj*/
-    public class UIHandler: MonoBehaviour
+    public class UIHandler : MonoBehaviour
     {
         [SerializeField]
         TextMeshProUGUI countdownText;
@@ -17,6 +17,9 @@ namespace OOO.Camera
         [SerializeField]
         TextMeshProUGUI scoreText;
 
+        [SerializeField]
+        GameObject[] stars;
+
 
         [SerializeField]
         LevelGameState gameState;
@@ -24,7 +27,8 @@ namespace OOO.Camera
         public void OnGameStart()
         {
             gameState = FindObjectOfType<LevelGameState>();
-            if (gameState == null || gameState.levelData == null) {
+            if (gameState == null || gameState.levelData == null)
+            {
                 Debug.Log($"Missing game state!");
                 return;
             }
@@ -34,8 +38,16 @@ namespace OOO.Camera
 
         void Update()
         {
-            if (gameState == null)
-                return;
+            if (gameState == null) return;
+
+            _RenderCountdown();
+            _RenderScore();
+        }
+
+
+        private void _RenderCountdown()
+        {
+            string text = "";
 
             if (gameState.TotalTime > gameState.ElapsedTime)
             {
@@ -45,24 +57,58 @@ namespace OOO.Camera
 
                 if (seconds < 10)
                 {
-                    countdownText.text = minutes + ":" + "0" + seconds;
+                    text = minutes + ":" + "0" + seconds;
                 }
                 else
                 {
-                    countdownText.text = minutes + ":" + seconds;
+                    text = minutes + ":" + seconds;
                 }
             }
             else
             {
-                countdownText.text = "00:00";
+                text = "00:00";
 
                 EventHub.Instance.FireEvent(
                     new GameOverEvent() { gameOverReasong = GameOverEvent.GameOverReason.TIME_UP }
                 );
             }
 
+            countdownText.text = text;
+        }
 
-            scoreText.text = gameState.score.ToString();
+
+        private void _RenderScore()
+        {
+            var val = gameState.score;
+
+            foreach (var s in stars) { s.SetActive(false); }
+
+
+            switch (val)
+            {
+                case 3:
+                    stars[0].SetActive(true);
+                    stars[1].SetActive(true);
+                    stars[2].SetActive(true);
+                    break;
+
+                case 2:
+                    stars[0].SetActive(true);
+                    stars[1].SetActive(true);
+
+                    break;
+
+                case 1:
+                    stars[0].SetActive(true);
+
+                    break;
+
+                default:
+                    break;
+            }
+
         }
     }
+
+
 }
