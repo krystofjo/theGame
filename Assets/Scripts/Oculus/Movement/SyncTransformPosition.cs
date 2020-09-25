@@ -9,6 +9,12 @@ public class SyncTransformPosition : MonoBehaviour
     [HideInInspector]
     Transform tr;
 
+    void Start()
+    {
+       positionVariable.value = new Vector3(20, -70, -20); // Prasárna
+    }
+
+
     void LateUpdate()
     {
         tr.position = positionVariable;

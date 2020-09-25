@@ -28,6 +28,7 @@ public class VRCameraMovement : MonoBehaviour
     void Start()
     {
         cameraTransform = transform;
+        //cameraTransform.position = new Vector3(0, 0, 0);
 
         leftHand = GameObject.Find("LeftHandAnchor").GetComponent<Transform>();
         rightHand = GameObject.Find("RightHandAnchor").GetComponent<Transform>();
