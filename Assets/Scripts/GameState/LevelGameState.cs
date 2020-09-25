@@ -54,6 +54,7 @@ public class LevelGameState : BaseNetworkBehaviour
         RemoveEventListeners();
     }
 
+
     void KeyCollectedEventHandler(KeyCollectedEvent e)
     {
         if (e.keyType == requiredKey) {
@@ -64,6 +65,7 @@ public class LevelGameState : BaseNetworkBehaviour
             EventHub.Instance.FireEvent(new ExitOpenEvent());
         }
     }
+
 
     void ExitOccupancyChangeEventHandler(ExitOccupancyChangeEvent e)
     {
@@ -92,6 +94,7 @@ public class LevelGameState : BaseNetworkBehaviour
             TriggerLevelComplete();
     }
 
+
     void TriggerLevelComplete()
     {
         EventHub.Instance.FireEvent(new LevelCompleteEvent());
@@ -99,10 +102,12 @@ public class LevelGameState : BaseNetworkBehaviour
         paused = true;
     }
 
+
     void GamePauseEventHandler(GamePauseEvent e)
     {
         paused = e.state;
     }
+
 
     void GameOverEventHandler(GameOverEvent e)
     {
@@ -111,6 +116,7 @@ public class LevelGameState : BaseNetworkBehaviour
 
         FindObjectOfType<InGameUIController>().OnGameEnd();
     }
+
 
     void SetupEventListeners()
     {
@@ -122,6 +128,7 @@ public class LevelGameState : BaseNetworkBehaviour
         hub.AddListener<GameOverEvent>(GameOverEventHandler);
     }
 
+
     void RemoveEventListeners()
     {
         var hub = EventHub.Instance;
@@ -131,6 +138,7 @@ public class LevelGameState : BaseNetworkBehaviour
         hub.RemoveListener<GamePauseEvent>(GamePauseEventHandler);
         hub.RemoveListener<GameOverEvent>(GameOverEventHandler);
     }
+
 
     void Update()
     {
