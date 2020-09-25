@@ -8,12 +8,15 @@ using OOO.Utils;
 namespace OOO.Camera
 {
     /** Attached to the Camera obj*/
-    public class TimerTextHandler: MonoBehaviour
+    public class UIHandler: MonoBehaviour
     {
-        public Action onCountdownElapsed;
+        [SerializeField]
+        TextMeshProUGUI countdownText;
+
 
         [SerializeField]
-        TextMeshProUGUI countdownTimerText;
+        TextMeshProUGUI scoreText;
+
 
         [SerializeField]
         LevelGameState gameState;
@@ -26,7 +29,7 @@ namespace OOO.Camera
                 return;
             }
 
-            countdownTimerText.text = "--:--";
+            countdownText.text = "--:--";
         }
 
         void Update()
@@ -42,21 +45,24 @@ namespace OOO.Camera
 
                 if (seconds < 10)
                 {
-                    countdownTimerText.text = minutes + ":" + "0" + seconds;
+                    countdownText.text = minutes + ":" + "0" + seconds;
                 }
                 else
                 {
-                    countdownTimerText.text = minutes + ":" + seconds;
+                    countdownText.text = minutes + ":" + seconds;
                 }
             }
             else
             {
-                countdownTimerText.text = "00:00";
+                countdownText.text = "00:00";
 
                 EventHub.Instance.FireEvent(
                     new GameOverEvent() { gameOverReasong = GameOverEvent.GameOverReason.TIME_UP }
                 );
             }
+
+
+            scoreText.text = gameState.score.ToString();
         }
     }
 }

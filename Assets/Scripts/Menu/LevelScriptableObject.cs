@@ -17,4 +17,11 @@ public class LevelScriptableObject : ScriptableObject
 
     [Help("Time required for level (in seconds)")]
     public double timeLimit;
+
+    [Header("Stars")]
+    [Help("Rank stars required for level (in seconds)")]
+    public float rank3Stars;
+    public float rank2Stars;
+    public float rank1Stars;
+    
 }
