@@ -15,5 +15,8 @@ MonoBehaviour:
   levelIdentifier: level05
   scenePath: Level5
   nextLevel: {fileID: 11400000, guid: 8c3a4b22e59ca0146bceeadbb0e273f1, type: 2}
-  levelAmbience: event:/Sounds/Ambience/AmbienceBlue
+  levelAmbience: event:/LawD - S1-S2 - 01 01a
   timeLimit: 90
+  rank3Stars: 0
+  rank2Stars: 0
+  rank1Stars: 0

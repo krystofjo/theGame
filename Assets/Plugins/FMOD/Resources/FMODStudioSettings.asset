@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: FmodProject/Ooo/Ooo.fspro
-  sourceBankPath: FmodProject\Ooo\Build
+  sourceProjectPath: FmodProject/theGame/theGame.fspro
+  sourceBankPath: FmodProject\theGame\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -78,7 +78,6 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks:
-  - UI
+  Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
