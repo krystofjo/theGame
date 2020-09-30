@@ -234,6 +234,11 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 108866382698822476, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 963149697528435897, guid: abda966f19a19044e951985122894a72,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -529,6 +534,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -140
       objectReference: {fileID: 0}
+    - target: {fileID: 2080360951131324309, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2132307064640554926, guid: abda966f19a19044e951985122894a72,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -563,6 +573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -26.916016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3541393385561862705, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3840763367042796135, guid: abda966f19a19044e951985122894a72,
         type: 3}
@@ -609,15 +624,70 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -19.085693
       objectReference: {fileID: 0}
+    - target: {fileID: 5558240465299834302, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558240465299834302, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558240465299834302, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558240465299834302, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5558240465299834302, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25
+      objectReference: {fileID: 0}
     - target: {fileID: 6371686842422540894, guid: abda966f19a19044e951985122894a72,
         type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
-      value: 1
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142792993280185587, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7370057453875917352, guid: abda966f19a19044e951985122894a72,
         type: 3}
       propertyPath: m_UseSpriteMesh
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561023614113042034, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561023614113042034, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561023614113042034, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561023614113042034, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561023614113042034, guid: abda966f19a19044e951985122894a72,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 8016260210944855313, guid: abda966f19a19044e951985122894a72,
         type: 3}
