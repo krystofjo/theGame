@@ -23,6 +23,9 @@ namespace OOO.Camera
         GameObject[] stars;
 
         [SerializeField]
+        GameObject[] starsComplete;
+
+        [SerializeField]
         Slider elapsedTimeSlider;
 
         [SerializeField]
@@ -103,7 +106,7 @@ namespace OOO.Camera
             var val = gameState.score;
 
             foreach (var s in stars) { s.SetActive(false); }
-
+            foreach (var s in starsComplete) { s.SetActive(false); }
 
             switch (val)
             {
@@ -111,16 +114,26 @@ namespace OOO.Camera
                     stars[0].SetActive(true);
                     stars[1].SetActive(true);
                     stars[2].SetActive(true);
+
+                    starsComplete[0].SetActive(true);
+                    starsComplete[1].SetActive(true);
+                    starsComplete[2].SetActive(true);
+
                     break;
 
                 case 2:
                     stars[0].SetActive(true);
                     stars[1].SetActive(true);
 
+                    starsComplete[0].SetActive(true);
+                    starsComplete[1].SetActive(true);
+
                     break;
 
                 case 1:
                     stars[0].SetActive(true);
+
+                    starsComplete[0].SetActive(true);
 
                     break;
 

@@ -613,7 +613,7 @@ MonoBehaviour:
   Path: event:/LawD - S1-S2 - 01 01a
   guid: 02335b7e4bacb5449fee1445ebe52158
   Banks:
-  - {fileID: 8170460901476406744}
+  - {fileID: 5152269462186442520}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1116,6 +1116,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-4575380339624733737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/klice_1
+  m_EditorClassIdentifier: 
+  Path: event:/klice_1
+  guid: d30794daba3e7949807f640a7f40dfa1
+  Banks:
+  - {fileID: 5152269462186442520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 335
 --- !u!114 &-4541029039000828463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1173,6 +1196,24 @@ MonoBehaviour:
   Min: -1
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &-4384212535060576811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/theGame/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637370997646757290
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &-4247162154834215993
 MonoBehaviour:
@@ -1360,14 +1401,14 @@ MonoBehaviour:
   Path: event:/Jump
   guid: 1c44e6314b27814e8def4a307e1d1672
   Banks:
-  - {fileID: 8170460901476406744}
+  - {fileID: 5152269462186442520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 280
+  Length: 180
 --- !u!114 &-3056987208931692390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1487,11 +1528,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FmodProject/theGame/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637370132940045813
+  lastModified: 637370998348511629
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 876
+    Value: 914
   Exists: 1
 --- !u!114 &-2602102599928355864
 MonoBehaviour:
@@ -1922,18 +1963,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -2684174375976817260}
-  - {fileID: 8170460901476406744}
+  - {fileID: 5152269462186442520}
   EditorEvents:
   - {fileID: -6825835385128603050}
   - {fileID: -3177819021986832233}
   - {fileID: 6555629698183478187}
   - {fileID: 463275953108018335}
+  - {fileID: -4575380339624733737}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8170460901476406744}
+  - {fileID: 5152269462186442520}
   StringsBanks:
   - {fileID: -2684174375976817260}
-  stringsBankWriteTime: 637370132940045813
+  stringsBankWriteTime: 637370998348511629
   cacheVersion: 3
 --- !u!114 &235313918910753620
 MonoBehaviour:
@@ -2002,7 +2044,7 @@ MonoBehaviour:
   Path: event:/Jump2
   guid: e4ece83a4522ce4399819952db8758de
   Banks:
-  - {fileID: 8170460901476406744}
+  - {fileID: 5152269462186442520}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2916,6 +2958,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &5152269462186442520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/theGame/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637370998348501656
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5179884126631956652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3265,7 +3325,7 @@ MonoBehaviour:
   Path: event:/Waterdrop
   guid: 3c7e82b436a6744b811258dd1a3db2f1
   Banks:
-  - {fileID: 8170460901476406744}
+  - {fileID: 5152269462186442520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
