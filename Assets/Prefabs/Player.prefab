@@ -499,5 +499,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementEventRef: event:/Sounds/Movement
-  jumpEventRef: event:/Jump
+  jumpEventRef: event:/Waterdrop
   landEventRef: event:/OneShots/Land

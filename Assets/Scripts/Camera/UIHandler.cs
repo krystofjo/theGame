@@ -3,6 +3,7 @@ using Mirror;
 using TMPro;
 using UnityEngine;
 using OOO.Utils;
+using UnityEngine.UI;
 
 
 namespace OOO.Camera
@@ -10,6 +11,7 @@ namespace OOO.Camera
     /** Attached to the Camera obj*/
     public class UIHandler : MonoBehaviour
     {
+
         [SerializeField]
         TextMeshProUGUI countdownText;
 
@@ -20,9 +22,19 @@ namespace OOO.Camera
         [SerializeField]
         GameObject[] stars;
 
+        [SerializeField]
+        Slider elapsedTimeSlider;
+
+        [SerializeField]
+        Slider[] starSliders;
+
 
         [SerializeField]
         LevelGameState gameState;
+
+
+
+
 
         public void OnGameStart()
         {
@@ -34,6 +46,13 @@ namespace OOO.Camera
             }
 
             countdownText.text = "--:--";
+
+            
+            _SetSliders();
+
+
+
+
         }
 
         void Update()
@@ -74,6 +93,8 @@ namespace OOO.Camera
             }
 
             countdownText.text = text;
+            elapsedTimeSlider.value = (float)gameState.TotalTime-(float)gameState.ElapsedTime;
+
         }
 
 
@@ -108,6 +129,23 @@ namespace OOO.Camera
             }
 
         }
+
+        private void _SetSliders()
+        {
+            elapsedTimeSlider.maxValue = (float)gameState.TotalTime;
+            elapsedTimeSlider.value = (float)gameState.TotalTime;
+
+
+            starSliders[0].maxValue = (float)gameState.TotalTime;
+            starSliders[1].maxValue = (float)gameState.TotalTime;
+            starSliders[2].maxValue = (float)gameState.TotalTime;
+
+            starSliders[0].value = (float)gameState.TotalTime-gameState.levelData.rank3Stars;
+            starSliders[1].value = (float)gameState.TotalTime-gameState.levelData.rank2Stars;
+            starSliders[2].value = (float)gameState.TotalTime-gameState.levelData.rank1Stars;
+
+        }
+
     }
 
 

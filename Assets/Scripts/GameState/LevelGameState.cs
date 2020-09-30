@@ -185,6 +185,8 @@ public class LevelGameState : BaseNetworkBehaviour
             } else {
                 score = 0;
             }
+
+            
         }
     }
 }
