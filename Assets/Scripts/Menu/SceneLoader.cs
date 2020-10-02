@@ -14,16 +14,19 @@ public class SceneLoader : MonoBehaviour
 
     public void OpenMenu()
     {
+        StopMusic();
         SceneManager.LoadScene(mainMenuScene);
     }
 
     public void RestartLevel()
     {
+        StopMusic();
         SceneManager.LoadScene(gameState.levelData.scenePath);
     }
 
     public void NextLevel()
-    {
+    {   
+        StopMusic();
         var nextLevel = gameState.levelData.nextLevel;
         if (nextLevel == null)
             return;
@@ -35,5 +38,10 @@ public class SceneLoader : MonoBehaviour
     void Start()
     {
         gameState = FindObjectOfType<LevelGameState>();
+    }
+
+    void StopMusic()
+    {
+        this.GetComponentInParent<AmbienceSoundController>().StopCurrentMusic();
     }
 }

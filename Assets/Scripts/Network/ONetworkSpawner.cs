@@ -34,8 +34,9 @@ namespace OOO.Network
 
 
         void Start() {
+            
             FindObjectOfType<LevelGameState>().Initialize();
-
+            
             OnGameStart();
         }
 
@@ -49,7 +50,6 @@ namespace OOO.Network
             StartUI();
             StartTimer();
             StartMusic();
-
             DestroySpawner();    
         }
 
@@ -69,8 +69,13 @@ namespace OOO.Network
 
 
         void StartMusic()
-        {
+        {   
             mobileCamera.GetComponentInChildren<AmbienceSoundController>().OnGameStart();
+        }
+
+        void StopMusic()
+        {
+            mobileCamera.GetComponentInChildren<AmbienceSoundController>().StopCurrentMusic();
         }
 
 

@@ -846,6 +846,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 5587841555578432271, guid: 536ec4599aaad8f4f85cb578fc7961f3,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7879108612215147509, guid: f41cf39e2c5d05e44b7f16b40f077e41,
+        type: 2}
     - target: {fileID: 5592958906490989541, guid: 536ec4599aaad8f4f85cb578fc7961f3,
         type: 3}
       propertyPath: m_Layer
