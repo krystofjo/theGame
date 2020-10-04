@@ -16,6 +16,7 @@ public class InGameUIController : MonoBehaviour
 
     GameObject current;
 
+
     public void ShowLevelProgress()
         => SwitchCurrent(levelProgress);
 

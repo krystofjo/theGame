@@ -18,7 +18,7 @@ namespace OOO.Camera
 
         [SerializeField]
         TextMeshProUGUI scoreText;
-
+ 
         [SerializeField]
         GameObject[] stars;
 
