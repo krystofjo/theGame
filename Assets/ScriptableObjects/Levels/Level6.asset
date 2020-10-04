@@ -15,7 +15,7 @@ MonoBehaviour:
   levelIdentifier: level06
   scenePath: Level6
   nextLevel: {fileID: 11400000, guid: 8be2af760eb804345bd280c0495198ed, type: 2}
-  levelAmbience: event:/LawD - S1-S2 - 01 01a
+  levelAmbience: event:/Waterdrop
   timeLimit: 180
   rank3Stars: 0
   rank2Stars: 0

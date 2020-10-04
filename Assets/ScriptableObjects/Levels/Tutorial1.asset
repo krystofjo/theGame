@@ -15,7 +15,7 @@ MonoBehaviour:
   levelIdentifier: tutorial01
   scenePath: Tutorial1
   nextLevel: {fileID: 11400000, guid: 36f44f2c1eee1e944a5e8ee2ea51cbf3, type: 2}
-  levelAmbience: event:/LawD - S1-S2 - 01 01a
+  levelAmbience: event:/Waterdrop
   timeLimit: 600
   rank3Stars: 0
   rank2Stars: 0
