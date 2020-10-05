@@ -1,4 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 135caa16320dbcd47b64c6ac99a84df6
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+=======
 <<<<<<< HEAD:Assets/Animations/UI/Plane.controller.meta
 guid: 1cf3b0e194869b546b01b6b61b1aa09f
 NativeFormatImporter:
@@ -9,6 +15,7 @@ DefaultImporter:
 >>>>>>> parent of e8017fd... Adjustment UI:Assets/KawaseBlur.meta
   externalObjects: {}
   mainObjectFileID: 9100000
+>>>>>>> parent of e8017fd... Adjustment UI
   userData: 
   assetBundleName: 
   assetBundleVariant: 
